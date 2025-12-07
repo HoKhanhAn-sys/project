@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" />
+    <title>Thư viện âm nhạc - Liên hệ</title>
+    <link rel="stylesheet" href="../css/contact.css" />
+</head>
+<body>
+    <header class="main-header">
+        <h1>
+            <img src="../images/pngtree-music-book-with-musical-notes-vector-icon-audio-library-background-vector-picture-image_10515427.png" alt="Logo Thư viện âm nhạc" class="site-logo" />
+            Thư viện âm nhạc
+        </h1>
+        <nav class="main-nav">
+            <a href="index.html">Giới thiệu</a>
+            <a href="media.html">Media</a>
+            <a href="contact.html">Liên hệ</a>
+            <a href="auth.html" id="nav-auth">Đăng nhập / Đăng ký</a>
+        </nav>
+    </header>
+
+    <main class="contact-container">
+        <section class="form-card">
+            <h2>Liên hệ với chúng tôi</h2>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="contact-name">Tên của bạn</label>
+                    <input type="text" id="contact-name" />
+                    <div class="error" id="contact-name-error"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="contact-email">Gmail</label>
+                    <input type="email" id="contact-email" />
+                    <div class="error" id="contact-email-error"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="contact-message">Thông tin</label>
+                    <textarea id="contact-message" rows="4"></textarea>
+                    <div class="error" id="contact-message-error"></div>
+                </div>
+
+                <div class="error" id="contact-both-error"></div>
+
+                <button type="submit" class="btn-primary">Gửi</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2025 Thư viện âm nhạc</p>
+    </footer>
+
+    <script src="../java/contact.js"></script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" />
+    <title>Thư viện âm nhạc - Media</title>
+    <link rel="stylesheet" href="../css/media.css" />
+</head>
+<body>
+    <header class="main-header">
+        <h1>
+            <img src="../images/pngtree-music-book-with-musical-notes-vector-icon-audio-library-background-vector-picture-image_10515427.png" alt="Logo Thư viện âm nhạc" class="site-logo" />
+            Thư viện âm nhạc
+        </h1>
+        <nav class="main-nav">
+            <a href="index.html">Giới thiệu</a>
+            <a href="media.html">Media</a>
+            <a href="contact.html">Liên hệ</a>
+            <a href="auth.html" id="nav-auth">Đăng nhập / Đăng ký</a>
+        </nav>
+    </header>
+
+    <main class="media-container">
+        <section class="media-panel" id="music-panel">
+            <h2>Âm nhạc</h2>
+
+            <div class="song-category">
+                <h3>Nhạc buồn</h3>
+                <ul class="song-list">
+                    <li class="song-row" data-video-id="HVmpI3d11oM">
+                        <div class="song-title-box" data-title="SHUT UP MY MOMS CALLING">SHUT UP MY MOMS CALLING</div>
+                        <button class="btn-view">Xem</button>
+                        <button class="btn-fav" data-title="SHUT UP MY MOMS CALLING">Yêu thích</button>
+                    </li>
+                    <li class="song-row" data-video-id="quDsoSYQJzs">
+                        <div class="song-title-box" data-title="Sleepwalker">Sleepwalker</div>
+                        <button class="btn-view">Xem</button>
+                        <button class="btn-fav" data-title="Sleepwalker">Yêu thích</button>
+                    </li>
+                    <li class="song-row" data-video-id="DeAuytNOgU0">
+                        <div class="song-title-box" data-title="Vợ Người Ta">Vợ Người Ta</div>
+                        <button class="btn-view">Xem</button>
+                        <button class="btn-fav" data-title="Vợ Người Ta">Yêu thích</button>
+                    </li>
+                    <li class="song-row" data-video-id="cizoIav3geY">
+                        <div class="song-title-box" data-title="ĐỢI - 52Hz">ĐỢI - 52Hz</div>
+                        <button class="btn-view">Xem</button>
+                        <button class="btn-fav" data-title="ĐỢI - 52Hz">Yêu thích</button>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="song-category">
+                <h3>Nhạc bolero</h3>
+                <ul class="song-list">
+                    <li class="song-row" data-video-id="MMHu4r1cIlU">
+                        <div class="song-title-box" data-title="TRÌNH (Bolero Version)">TRÌNH (Bolero Version)</div>
+                        <button class="btn-view">Xem</button>
+                        <button class="btn-fav" data-title="TRÌNH (Bolero Version)">Yêu thích</button>
+                    </li>
+                    <li class="song-row" data-video-id="8pb1cHeW6Cg">
+                        <div class="song-title-box" data-title="Chiều Sân Ga - Phương Anh (Official MV)">Chiều Sân Ga - Phương Anh (Official MV)</div>
+                        <button class="btn-view">Xem</button>
+                        <button class="btn-fav" data-title="Chiều Sân Ga - Phương Anh (Official MV)">Yêu thích</button>
+                    </li>
+                    <li class="song-row" data-video-id="RLCZ8gJx4Ks">
+                        <div class="song-title-box" data-title="Thư Tình Em Gái - Hoàng Hải">Thư Tình Em Gái - Hoàng Hải</div>
+                        <button class="btn-view">Xem</button>
+                        <button class="btn-fav" data-title="Thư Tình Em Gái - Hoàng Hải">Yêu thích</button>
+                    </li>
+                    <li class="song-row" data-video-id="gCmqOQiFjCs">
+                        <div class="song-title-box" data-title="Người đã thay lòng">Người đã thay lòng</div>
+                        <button class="btn-view">Xem</button>
+                        <button class="btn-fav" data-title="Người đã thay lòng">Yêu thích</button>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="media-panel" id="video-panel">
+            <h2>Video</h2>
+            <div class="video-wrapper">
+                <iframe id="video-frame" src="https://www.youtube.com/embed/dQw4w9WgXcQ" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2025 Thư viện âm nhạc</p>
+    </footer>
+
+    <div class="fav-overlay" id="fav-overlay">
+        <div class="fav-dialog">
+            <h3>Nhạc đã yêu thích</h3>
+            <ul id="fav-list"></ul>
+            <button id="fav-close" class="btn-close">Đóng</button>
+        </div>
+    </div>
+
+    <script src="../java/media.js"></script>
+</body>
+</html>

@@ -1,0 +1,160 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+}
+
+.main-header {
+    background: #222;
+    color: #fff;
+    padding: 16px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.main-header h1 {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.main-nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 12px;
+    padding: 6px 10px;
+    border: 1px solid #fff;
+    border-radius: 8px;
+}
+
+.site-logo {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.main-nav a:hover {
+    text-decoration: underline;
+}
+
+.main-nav .user-menu {
+    position: relative;
+    display: inline-block;
+}
+
+.user-menu-label {
+    margin-right: 4px;
+}
+
+.user-menu-caret {
+    font-size: 11px;
+}
+
+.user-dropdown {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    min-width: 160px;
+    background: #2e7d32;
+    color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+    overflow: hidden;
+    display: none;
+    z-index: 20;
+}
+
+.user-menu:hover .user-dropdown {
+    display: block;
+}
+
+.user-dropdown li {
+    padding: 10px 14px;
+    cursor: pointer;
+}
+
+.user-dropdown li:hover {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.auth-container {
+    max-width: 800px;
+    margin: 32px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.form-card {
+    width: 100%;
+    max-width: 420px;
+    background: #fff;
+    padding: 24px;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transform: rotate(0deg);
+    transition: transform 0.3s;
+}
+
+.form-card:hover {
+    transform: rotate(1deg);
+}
+
+.hidden {
+    display: none;
+}
+
+.form-group {
+    margin-bottom: 16px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 4px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.btn-primary {
+    padding: 10px 16px;
+    border-radius: 8px;
+    border: none;
+    background: #0077ff;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.btn-primary:hover {
+    background: #005fd1;
+}
+
+.error {
+    color: red;
+    font-size: 13px;
+    min-height: 16px;
+}
+
+.switch-text {
+    margin-top: 12px;
+}
+
+.main-footer {
+    text-align: center;
+    padding: 16px;
+    margin-top: 24px;
+    background: #222;
+    color: #fff;
+}
